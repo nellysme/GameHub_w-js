@@ -10,7 +10,7 @@ async function fetchGames(){
 	
 	const games = results;
 
-	console.log(results);
+	
 
 	
 
@@ -29,6 +29,7 @@ async function fetchGames(){
 								<h1 class="card-title">${games[i].title}</h1>
 								<h4 class="free-title">Price ${games[i].price}</h4>
 								<h3 class="genre-title">${games[i].genre}</h3>
+								<div class="add-to-cart"><p>ADD</p></div>
 								</a>
 								</div>`						
 	}
@@ -38,3 +39,44 @@ async function fetchGames(){
 }
 
 fetchGames();
+
+fetch("products.json")
+
+.then(function(response){
+	return response.json();
+})
+
+.then(function(data){
+	localStorage.setItem("products", JSON.stringify(data));
+	if(!localStorage.getItem("cart")){
+	localStorage.setItem("cart", "[]");
+	}
+
+});
+
+let products = JSON.parse(localStorage.getItem("products"));
+let cart = JSON.parse(localStorage.getItem("cart"));
+
+function addItemToCart(productId){
+
+	let product = products.find(function(product){
+		return product.id == productID;
+	});
+
+	if(cart.lenght == 0){
+		cart.push(product);
+		
+	}else{
+		let res = cart.find(element => element.id == productId);
+
+		if(res === undefined){
+			cart.push(product);
+		}
+
+	}
+
+	localStorage.setItem("cart", JSON.stringify(cart));
+
+}
+
+addItemToCart(1);

@@ -24,6 +24,7 @@ async function fetchGame() {
                                     <img class="image"src="${details.image}"/>
                                     <p>${details.description}</p>
                                     <h2>${details.price}</h2>
+                                    <div class="add-to-cart"><p>ADD</p></div>
                                     `;
                                     
     }
@@ -31,3 +32,4 @@ async function fetchGame() {
 
 fetchGame();
 
+fetch("products.json")
