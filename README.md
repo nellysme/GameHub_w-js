@@ -28,7 +28,7 @@ This site is made with a Wordpress API.
 1. Clone the repo:
 
 ```bash
-[[git clone git@github.com:NoroffFEU/portfolio-1-example.git](https://github.com/nellysme/project-exam-1.git)](https://github.com/nellysme/GameHub_w-js.git)
+[(https://github.com/nellysme/project-exam-1.git)](https://github.com/nellysme/GameHub_w-js.git)
 ```
 
 ### Live link
