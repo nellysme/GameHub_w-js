@@ -1,7 +1,8 @@
 # GameHub with JS
 
 
-![gamehub](https://github.com/nellysme/GameHub_w-js/assets/95544187/8dd5e94f-a572-4a15-bc34-f80504947169)
+![gamehub](https://github.com/nellysme/GameHub_w-js/assets/95544187/80985331-2ddf-47c6-bf22-f8b391f057e5)
+
 
 
 ## Description
